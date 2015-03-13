@@ -5,6 +5,8 @@ require 'sinatra'
 require 'json'
 require 'tempfile'
 
+set :bind, '0.0.0.0'
+set :port, 8080
 ##User is trying to access an endpoint that isn't valid
 not_found do
 
